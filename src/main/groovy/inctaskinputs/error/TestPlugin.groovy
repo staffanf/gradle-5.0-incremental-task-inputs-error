@@ -1,4 +1,4 @@
-package gradle.filetree.error
+package inctaskinputs.error
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

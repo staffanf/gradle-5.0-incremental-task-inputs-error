@@ -20,9 +20,7 @@ gradlePlugin {
     (plugins) {
         create("test.plugin") {
             id = "test.plugin"
-            implementationClass = "gradle.filetree.error.TestPlugin"
+            implementationClass = "inctaskinputs.error.TestPlugin"
         }
-
-        }
-
+    }
 }

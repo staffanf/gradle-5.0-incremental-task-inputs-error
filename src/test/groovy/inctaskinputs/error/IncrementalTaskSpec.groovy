@@ -1,4 +1,4 @@
-package gradle.filetree.error
+package inctaskinputs.error
 
 import org.gradle.testkit.runner.BuildResult
 import org.gradle.testkit.runner.GradleRunner
@@ -10,7 +10,7 @@ import spock.lang.Unroll
 import static org.gradle.testkit.runner.TaskOutcome.SUCCESS
 
 @Unroll
-class FileTreeTaskSpec extends Specification {
+class IncrementalTaskSpec extends Specification {
   File buildFile
 
   @Rule
@@ -26,9 +26,9 @@ plugins {
   id 'test.plugin' apply false
 }
 
-import gradle.filetree.error.FileTreeTask
+import inctaskinputs.error.IncrementalTask
 
-task fileTask(type: FileTreeTask) {
+task fileTask(type: IncrementalTask) {
   inputs.files fileTree(dir: "$inDir.absolutePath", include: '$inputFile.name')  
 }
 """

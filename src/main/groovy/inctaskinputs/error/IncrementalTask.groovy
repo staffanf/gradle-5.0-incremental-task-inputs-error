@@ -1,10 +1,10 @@
-package gradle.filetree.error
+package inctaskinputs.error
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.TaskAction
 import org.gradle.api.tasks.incremental.IncrementalTaskInputs
 
-class FileTreeTask extends DefaultTask {
+class IncrementalTask extends DefaultTask {
 
   @TaskAction
   void expectAFile(IncrementalTaskInputs incrementalInputs) {
